@@ -3,12 +3,10 @@
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
-	"runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined" ],
 
 	// Set *default* container specific settings.json values on container create.
 	"settings": { 
-		"terminal.integrated.shell.linux": "/bin/bash",
-		"lldb.executable": "/usr/bin/lldb",
+		"terminal.integrated.shell.linux": "/usr/bin/zsh",
 		// VS Code don't watch files under ./target
 		"files.watcherExclude": {
 			"**/target/**": true
@@ -19,8 +17,10 @@
 	"extensions": [
 		"rust-lang.rust",
 		"bungcip.better-toml",
-		"vadimcn.vscode-lldb",
-		"mutantdino.resourcemonitor"
+		"mutantdino.resourcemonitor",
+		"cschleiden.vscode-github-actions",
+		"matklad.rust-analyzer",
+		"serayuzgur.crates",
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
