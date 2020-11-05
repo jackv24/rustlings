@@ -6,6 +6,7 @@
 
 	// Set *default* container specific settings.json values on container create.
 	"settings": { 
+		"editor.formatOnSave": true,
 		"terminal.integrated.shell.linux": "/usr/bin/zsh",
 		// VS Code don't watch files under ./target
 		"files.watcherExclude": {
@@ -15,12 +16,13 @@
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
-		"rust-lang.rust",
 		"bungcip.better-toml",
 		"mutantdino.resourcemonitor",
 		"cschleiden.vscode-github-actions",
+		"ms-vsliveshare.vsliveshare",
 		"matklad.rust-analyzer",
 		"serayuzgur.crates",
+		"vadimcn.vscode-lldb"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
